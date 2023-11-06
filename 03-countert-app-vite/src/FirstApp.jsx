@@ -1,7 +1,6 @@
-// const newMessage = 1;
+import PropTypes from 'prop-types';
 
-export const FirstApp = ({title ,subtitle}) => {
-
+export const FirstApp = ({title ,subtitle }) => {
   // console.log(props);
 
   return (
@@ -12,3 +11,14 @@ export const FirstApp = ({title ,subtitle}) => {
     </>
   );
 };
+
+
+FirstApp.prototype = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string
+}
+
+FirstApp.defaultProps = {
+  title:'No hay titulo',
+  subtitle:'No hay subtitulo',
+}

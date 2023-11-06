@@ -9,8 +9,8 @@ import './styles.css'
 // }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>litos
+    <React.StrictMode>
         {/* <HelloWorldApp /> */}
-        <FirstApp title = "litos"  subtitle={123}/>
+        <FirstApp  />
     </React.StrictMode>
 )
