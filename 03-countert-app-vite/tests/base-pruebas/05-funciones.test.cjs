@@ -25,7 +25,7 @@ describe('Pruebas en 05-funciones', () => {
             username: nombre
         }
 
-        expect(testUser2).toStrictEqual(getUsuarioActivo(nombre+'p'));
+        expect(testUser2).toStrictEqual(getUsuarioActivo(nombre));
 
     });
 
