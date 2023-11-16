@@ -13,12 +13,14 @@ export const FirstApp = ({title ,subtitle }) => {
 };
 
 
-FirstApp.prototype = {
+
+FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string
+  subTitle: PropTypes.string,
 }
 
 FirstApp.defaultProps = {
-  title:'No hay titulo',
-  subtitle:'No hay subtitulo',
+  name: 'Fernando Herrera',
+  subTitle: 'No hay subtítulo',
+  // title: 'No hay título',
 }
